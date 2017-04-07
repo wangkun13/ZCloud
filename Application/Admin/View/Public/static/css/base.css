@@ -1,0 +1,697 @@
+/* Base CSS 4 controllers of laia style. */
+input[type='text'].laia-ctrl,
+input[type='password'].laia-ctrl,
+textarea.laia-ctrl {
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    display: block;
+    width: 100%;
+}
+
+.laia-ipt {
+    height: 40px;
+    padding: 0 40px 0 10px;
+}
+
+.laia-area {
+    padding: 10px 10px 20px;
+}
+
+input[type='text'].laia-ctrl:hover,
+input[type='text'].laia-ctrl:focus,
+input[type='password'].laia-ctrl:hover,
+input[type='password'].laia-ctrl:focus,
+textarea.laia-ctrl:hover,
+textarea.laia-ctrl:focus {
+    border-color: #1fbba6;
+    outline-offset: 0;
+    outline: inherit;
+}
+
+.divider {
+    border: 1px solid #eee;
+}
+
+.laia-ctrl-cnr {
+    position: relative;
+    padding-right: 0 !important;
+}
+
+.laia-ctrl-count {
+    position: absolute;
+    line-height: 20px;
+    font-size: 10px;
+    letter-spacing: 0px;
+}
+
+.laia-ipt + .laia-ctrl-count {
+    bottom: 10px;
+    right: 5px;
+    color: #999;
+}
+
+.laia-area + .laia-ctrl-count {
+    bottom: 0;
+    right: 10px;
+    color: #999;
+}
+
+.help-ntc {
+    color: #f11919;
+}
+
+.laia-row {
+    padding: 15px;
+}
+
+.laia-row:after {
+    content: '';
+    clear: both;
+}
+
+.laia-img-link {
+    text-decoration: none;
+}
+
+.pd-20 {
+    padding: 20px;
+}
+
+.duang-opacity img {
+    -webkit-transition: opacity .1s linear;
+    -moz-transition: opacity .1s linear;
+    -o-transition: opacity .1s linear;
+    transition: opacity .1s linear
+}
+
+.duang-opacity a:hover img,
+a:hover .opacity img {
+    opacity: 0.85;
+    filter: alpha(opacity=85)
+}
+
+.album-item {
+}
+
+.album-img {
+    border: 1px solid #e0e0e0
+}
+
+.album-img img {
+    display: block
+}
+
+.album-title {
+    display: block;
+    text-align: left;
+    padding: 7px 5px;
+    line-height: 18px;
+    color: #555;
+    text-decoration: none;
+    font-size: 12px;
+    border: solid 1px #e0e0e0;
+    border-top: 0
+}
+
+.album-bg-Fir,
+.album-bg-Sec {
+    border: 1px solid #e6e6e6;
+    border-top: 1px solid #f5f5f5;
+    height: 1px;
+    margin: 0 auto;
+    overflow: hidden
+}
+
+.album-bg-Fir {
+    margin: 0 3px
+}
+
+.album-bg-Sec {
+    margin: 0 6px
+}
+
+.portfolio-area {
+    margin-right: -20px;
+    padding: 0;
+}
+
+.portfolio-area li {
+    list-style-type: none;
+    position: relative;
+    float: left;
+    margin-right: 20px;
+    min-width: 100px;
+    min-height: 100px;
+    margin-top: 20px;
+}
+
+.portfolio-area li.hover {
+    z-index: 9
+}
+
+.portfolio-area li .portfoliobox {
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+}
+
+.portfolio-area li .portfoliobox .picbox {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 2px solid #eee;
+    text-align: center;
+}
+
+.portfolio-area li .portfoliobox:hover .picbox,
+.portfolio-area li .portfoliobox:focus .picbox,
+.portfolio-area li .portfoliobox.active .picbox {
+    border: 2px solid #1fbba6;
+}
+
+.portfolio-area li .portfoliobox:hover .img-chk + label,
+.portfolio-area li .portfoliobox:focus .img-chk + label,
+.portfolio-area li .portfoliobox.active .img-chk + label {
+    display: block;
+    border-color: #1fbba6;
+}
+
+.portfolio-area li .checkbox {
+    position: absolute;
+    top: 10px;
+    right: 5px;
+    cursor: pointer;
+    border: 1px solid #eee;
+}
+
+.portfolio-area li.hover .portfoliobox {
+    height: auto;
+    padding-bottom: 10px;
+    box-shadow: 0 1px 3px rgba(68, 68, 68, 0.3);
+    -moz-box-shadow: 0 1px 3px rgba(68, 68, 68, 0.3);
+    -webkit-box-shadow: 0 1px 3px rgba(68, 68, 68, 0.3)
+}
+
+.portfolio-area li .picbox > a > div {
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.portfolio-area li .textbox {
+    display: none;
+    margin-top: 5px;
+}
+
+.portfolio-area li.hover .textbox {
+    display: block;
+}
+
+.portfolio-area li label {
+    cursor: pointer
+}
+
+.img-chk {
+    display: none;
+}
+
+.img-chk + label {
+    display: none;
+    background-color: #FFF;
+    border: 2px solid #C1CACA;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+    padding: 9px;
+    position: absolute;
+    margin: 0;
+    top: 0;
+    left: 0;
+    z-index: 9;
+}
+
+.img-chk + label:active {
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.img-chk:checked + label {
+    display: block;
+    background-color: #ECF2F7;
+    border: 1px solid #92A1AC;
+    color: #243441;
+}
+
+.img-chk:checked + label:after {
+    width: 20px;
+    height: 20px;
+    content: '\2714';
+    position: absolute;
+    top: -1px;
+    right: -1px;
+    color: #fff;
+    text-align: center;
+    font-size: 20px;
+    line-height: 20px;
+    padding: 0;
+    vertical-align: text-top;
+    background-color: #1fbba6;
+}
+
+.video-thumbnail {
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.video-cover {
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+    background-color: #000;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+}
+
+.video-date {
+    background-color: rgba(0, 0, 0, .6);
+    color: #fff;
+    padding: 0 7px;
+    height: 26px;
+    font-size: 12px;
+    line-height: 26px;
+    margin-top: -26px;
+}
+
+.video-date:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.video-dsc {
+    width: 100%;
+    padding: 10px;
+}
+
+.video-dsc > * {
+    width: 100%;
+    height: 40px;
+    line-height: 20px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+#laiaUploader {
+    display: inline-block;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#laiaUploader.imgUper {
+    background-image: url(img/uimg.png);
+}
+
+#laiaUploader.videoUper {
+    background-image: url(img/uvideo.png);
+}
+
+.laia-mask {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.laia-edit-cnr {
+    position: absolute;
+    left: 50%;
+    top: 70px;
+}
+
+.edit-icon {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    top: -35px;
+    left: 50%;
+    margin-left: -35px;
+    z-index: 9;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(img/editicon.png);
+}
+
+.edit-cnt {
+    position: relative;
+    width: 100%;
+    background-color: #1fbba6;
+    padding-top: 35px;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.cnt-body {
+    background-color: #fff;
+    padding: 10px;
+}
+
+.cnt-foot {
+    padding: 10px;
+    background-color: #fff;
+}
+
+.cnt-foot:after {
+    display: block;
+    content: '';
+    clear: both;
+}
+
+.laia-chk {
+    position: relative;
+    display: inline-block;
+}
+
+.laia-chk label {
+    float: left;
+    background-color: #FFF;
+    border: 1px solid #C1CACA;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+    padding: 9px;
+    margin: 0;
+}
+
+.laia-chk label:active {
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.laia-chk input {
+    display: none;
+}
+
+.laia-chk input:checked + label {
+    background-color: #ECF2F7;
+    border: 1px solid #92A1AC;
+    color: #243441;
+}
+
+.laia-chk input:checked + label:after {
+    width: 20px;
+    height: 20px;
+    content: '\2714';
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #fff;
+    text-align: center;
+    font-size: 20px;
+    line-height: 20px;
+    padding: 0;
+    vertical-align: text-top;
+    background-color: #1fbba6;
+}
+
+.tag-area {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #1fbba6;
+    margin-bottom: 10px;
+    min-height: 59px;
+}
+
+.tag-cnr {
+    display: inline-block;
+    height: 32px;
+    border-radius: 16px;
+    padding: 0 16px;
+    line-height: 32px;
+    color: #fff;
+    background-color: #1fbba6;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+.tag-cnr-nocheck{
+    display: inline-block;
+    height: 32px;
+    border-radius: 16px;
+    padding: 0 16px;
+    line-height: 32px;
+    background-color: #fff;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    border:1px solid #ccc;
+}
+
+.tag-cnr * {
+    display: inline-block;
+}
+
+.tag-close {
+    font-weight: bold;
+    color: white;
+    line-height: 32px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.tag-help {
+    margin: 15px 0 5px;
+    font-size: 85%;
+}
+
+.bootstrap-select .dropdown-toggle:focus {
+    outline: 5px auto #1fbba6 !important;
+    outline-offset: -2px;
+}
+
+.bootstrap-select .btn-default:hover {
+    border-color: #1fbba6;
+}
+
+.video-preview-cnr {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background-color: rgba(0, 0, 0, .6);
+}
+
+.video-preview-cnt {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 70px;
+    bottom: 0;
+}
+
+.video-preview-cnt .video-js {
+    width: 100%;
+    height: 100%;
+}
+
+.video-close {
+    float: right;
+}
+
+.video-close:after {
+    content: '\2716';
+    font-size: 40px;
+    line-height: 1;
+    font-weight: 400;
+    color: #fff;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    cursor: pointer;
+    margin: 10px 10px 0 0;
+}
+
+.audio-radio-cnr {
+    border: 1px solid #ccc;
+    font-size: 18px;
+}
+
+.audio-radio-cnr .help {
+    color: #999;
+}
+
+.audio-radio-cnr .title {
+    padding: 10px;
+    background-color: #f2f2f2;
+    border-bottom: 1px solid #ccc;
+    color: #999;
+}
+
+.audio-radio-cnr .sgl-radio-cnr {
+    padding: 10px;
+}
+
+.audio-radio-cnr label {
+    margin: 0;
+    font-weight: normal;
+    cursor: pointer;
+}
+
+.audio-upload-cnr {
+    margin-top: 10px;
+    background-color: #eee;
+    height: 50px;
+    line-height: 50px;
+    overflow: hidden;
+}
+
+.audio-upload-cnr > div {
+    padding-left: 20px;
+}
+
+.audio-upload-cnr > div:last-child {
+    padding-left: 70px;
+    background-image: url(img/audio.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left;
+}
+
+.audio-upload-cnr .pull-right {
+    margin: 10px;
+}
+
+.audio-upload-cnr .help {
+    display: inline-block;
+    color: #999;
+}
+
+.dot:after {
+    content: '\2022';
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+}
+
+.dot-first {
+    -webkit-animation-name: flash-first;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: 100;
+}
+
+.dot-second {
+    -webkit-animation-name: flash-second;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: 100;
+}
+
+.dot-third {
+    -webkit-animation-name: flash-third;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: 100;
+}
+
+@-webkit-keyframes flash-first {
+    0% {
+        color: rgba(255, 255, 255, 1);
+    }
+
+    25% {
+        color: rgba(255, 255, 255, .5);
+    }
+
+    50% {
+        color: rgba(255, 255, 255, 0);
+    }
+
+    75% {
+        color: rgba(255, 255, 255, .5);
+    }
+
+    100% {
+        color: rgba(255, 255, 255, 1);
+    }
+
+}
+
+@-webkit-keyframes flash-second {
+    0% {
+        color: rgba(255, 255, 255, .5);
+    }
+
+    25% {
+        color: rgba(255, 255, 255, 0);
+    }
+
+    50% {
+        color: rgba(255, 255, 255, .5);
+    }
+
+    75% {
+        color: rgba(255, 255, 255, 1);
+    }
+
+    100% {
+        color: rgba(255, 255, 255, .5);
+    }
+
+}
+
+@-webkit-keyframes flash-third {
+    0% {
+        color: rgba(255, 255, 255, 0);
+    }
+
+    25% {
+        color: rgba(255, 255, 255, .5);
+    }
+
+    50% {
+        color: rgba(255, 255, 255, 1);
+    }
+
+    75% {
+        color: rgba(255, 255, 255, .5);
+    }
+
+    100% {
+        color: rgba(255, 255, 255, 0);
+    }
+
+}
+
+.pagination {
+    display: block;
+}
+
+#pageCount {
+    margin-left: 15px;
+}
+
+#fixQrCode {
+    padding-left: 25%;
+    padding-right: 25%;
+    text-align: center;
+    color: #333;
+    font-size: 18px;
+}
+#fixQrCode img {
+    width: 60%
+}
+#downCnr{
+    margin:20px;
+    background: #eee;
+    border-radius: 4px;
+    padding: 20px;
+    border: 1px solid #ccc;
+}

@@ -1,0 +1,80 @@
+#sceName {
+    font-weight: bold;
+    font-size: 40px;
+    color: #000;
+    margin: 20px;
+}
+
+.portfolio-area>li {
+    width: calc(20% - 20px);
+    height: 0;
+    padding-bottom: calc(20% - 20px);
+}
+
+.portfolio-area li .portfoliobox .addvideo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.portfolio-area li .addvideo div {
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.laia-edit-cnr {
+    width: 800px;
+    margin-left: -400px;
+}
+
+#videoCnr {
+    width: 390px;
+}
+
+#videoCnr span {
+    margin-left: 65px;
+    display: block;
+    margin-top: 5px;
+}
+
+.star {
+    color: red;
+    margin-right: 3px;
+}
+
+#ContentCnr {
+    width: 390px;
+}
+
+#ContentCnr #upCoverBtn {
+    margin-left: 10px;
+}
+
+.cnt-foot #btnSubmit {
+    margin-left: 10px;
+}
+
+.video-cover {
+    padding-bottom: 75%;
+}
+
+.qrCode {
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+
+#musicPlayCnr{
+    background:url('/bsce/Public/img/music.png');
+    background-repeat: no-repeat;
+}
+#musicPlayCnr img{
+    margin: 38px;
+}
+

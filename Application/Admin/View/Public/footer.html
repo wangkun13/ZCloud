@@ -1,0 +1,17 @@
+<div id='loading' style='display: none'>
+    <div>
+        <img src="/bsce/Public/img/loading.gif" align=""><span>&nbsp;&nbsp;loading...</span>
+    </div>
+</div>
+<div id="footer">© 2016 版权归世纪云道所有</div>
+</div>
+<!-- JavaScript -->
+<script src="__PUBLIC__/js/bootstrap.min.js"></script>
+<script src="__PUBLIC__/js/vue.min.js"></script>
+<script src="__STATIC__/js/app.js"></script>
+<?php $str = "[js]"; $arr = explode(",", $str); ?>
+<foreach name="arr" item="src">
+    <script src="{$src}"></script>
+</foreach>
+</body>
+</html>

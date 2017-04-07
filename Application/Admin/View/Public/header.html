@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta http-equiv="content-type" content="text/html;charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no"> 
+<meta name="apple-mobile-web-app-capable" content="yes"> 
+<meta name="apple-mobile-web-status-bar-style" content="block"> 
+<meta name="fromat-detecition" content="telephone=no">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<title>[title]</title>
+<link rel="stylesheet" href="__PUBLIC__/css/bootstrap.min.css">
+<link rel="stylesheet" href="__STATIC__/css/sb-admin.css">
+<link rel="stylesheet" href="__STATIC__/font-awesome/css/font-awesome.min.css">
+<link rel="icon" href="/bsce/Public/img/favicon.ico">
+<script src="__PUBLIC__/js/jquery.min.js"></script>
+<!-- <script src="__STATIC__/js/basePermit.js"></script> -->
+<load href="[css]" />
+</head>
+<body>
+<!-- NOTICE BEGIN -->
+  <div id="noticeCnr">
+    <div v-html="consoleMsg"></div>
+    <div v-show="confirm.show" class="confirm-cnr" style="display:none;">
+      <div class="confirm-cnt">
+        <span v-html="confirm.msg"></span>
+        <div class="confirm-btn-cnr">
+          <div class="confirm-btn" @click="confirm.confirm()">确定</div>
+          <div class="confirm-btn" @click="confirm.cancel()">取消</div>
+          <div class="clear"></div>
+        </div>
+      </div>
+    </div>
+    <div v-show="alert.show" class="alert-cnr" :class="alert.type" style="display:none;">
+      <span v-html="alert.msg"></span>
+    </div>
+  </div>
+  <!-- NOTICE END -->
+  <div id="wrapper">
+    <nav class="navbar navbar-inverse navbar-fixed-top wk_style" role="navigation" >
+      <div >
+        <div class="col-md-7">
+          云财税平台管理中心
+        </div>
+        <div class="col-md-5 ">
+          <div class="  pull-right  dropdown-toggle wk_border primary" id="dropdownMenu1" data-toggle="dropdown">
+          技术支持<a href="#">dfsdfs</a>
+          </div>
+
+          <ul class="dropdown-menu pull-right" role="menu"
+              aria-labelledby="dropdownMenu1">
+            <li role="presentation">
+              <a role="menuitem" tabindex="-1" href="#">Java</a>
+            </li>
+            <li role="presentation">
+              <a role="menuitem" tabindex="-1" href="#">数据挖掘</a>
+            </li>
+            <li role="presentation">
+              <a role="menuitem" tabindex="-1" href="#">数据通信/网络</a>
+            </li>
+            <li role="presentation" class="divider"></li>
+            <li role="presentation">
+              <a role="menuitem" tabindex="-1" href="#">分离的链接</a>
+            </li>
+          </ul>
+
+          <div class=" wk_border pull-right">
+            服务(0)
+          </div>
+          <div class=" wk_border pull-right" >
+            消息(0)
+          </div>
+          <div class=" wk_border pull-right">
+            <img class="verify wk_right" src="__STATIC__/css/img/icon_head.png" />
+            你好,{:session('user_name')}
+          </div>
+        </div>
+        <div class="clearfix"></div>
+        <include file="Public/sidebar" />
+        <!--<div class="navbar-header">-->
+          <!--<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">-->
+            <!--<span class="sr-only"></span>-->
+            <!--<span class="icon-bar"></span>-->
+            <!--<span class="icon-bar"></span>-->
+            <!--<span class="icon-bar"></span>-->
+          <!--</button>-->
+          <!--<a class="navbar-brand" href="{:U('index/index')}">-->
+            <!--<div class="title-sce">{$scename}</div>-->
+            <!--<div class="title-laia">云财税平台ss管理中心</div>-->
+          <!--</a>-->
+        <!--</div>-->
+        <!--<div class="collapse navbar-collapse navbar-ex1-collapse" style="background-color:#2573e8;color:white">-->
+          <!--<include file="Public/sidebar" />-->
+          <!--<div class="col-md-4">-->
+            <!--景区标签：-->
+          <!--</div>-->
+          <!--<div class="col-md-4">-->
+            <!--景区标签：-->
+          <!--</div>-->
+          <!--<div class="col-md-4">-->
+            <!--景区标签：-->
+          <!--</div>-->
+          <!--&lt;!&ndash;<ul class="nav navbar-nav navbar-right navbar-user">&ndash;&gt;-->
+            <!--&lt;!&ndash;<li class="dropdown user-dropdown">&ndash;&gt;-->
+              <!--&lt;!&ndash;<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> 你好,{:session('user_name')} <b class="caret"></b></a>&ndash;&gt;-->
+              <!--&lt;!&ndash;<ul class="dropdown-menu">&ndash;&gt;-->
+               <!--&lt;!&ndash;&lt;!&ndash; <li><a href="#"><i class="fa fa-gear"></i> 设置</a></li>&ndash;&gt;&ndash;&gt;-->
+                <!--&lt;!&ndash;<li><a href="{:U('login/logout')}"><i class="fa fa-power-off"></i> 退出</a></li>&ndash;&gt;-->
+              <!--&lt;!&ndash;</ul>&ndash;&gt;-->
+            <!--&lt;!&ndash;</li>&ndash;&gt;-->
+          <!--&lt;!&ndash;</ul>&ndash;&gt;-->
+        <!--</div>-->
+      </div>
+    </nav>
